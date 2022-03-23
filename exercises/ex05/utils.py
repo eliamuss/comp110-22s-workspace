@@ -8,7 +8,7 @@ def only_evens(main_list: list[int]) -> list[int]:
     even_list: list[int] = []
     i = 0 
 
-    """Allows to go through each piece of data in the list."""
+# Allows to go through each piece of data in the list.
     while i < len(main_list):
         if main_list[i] % 2 == 0:
             even_list.append(main_list[i])
@@ -16,10 +16,8 @@ def only_evens(main_list: list[int]) -> list[int]:
     return even_list
 
 
-"""Generates a List which is a subset of the given list, between the specified start index and the end index."""
-
-
 def sub(main_list: list[int], start_index: (int), end_index: (int)) -> list[int]:
+    """Generates a List which is a subset of the given list, between the specified start index and the end index."""
     if start_index < 0:     
         start_index = 0
     if end_index > len(main_list):
